@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<button onclick="purchase()" >Purchase</button>
+<button onclick="orderHistory()">Order History</button>
+<script>
+        function purchase() {
+           
+            window.location.href = "Shoppingcart.html";
+        }
+
+        function orderHistory() {
+            // Redirect to the OrderHistoryServlet
+            window.location.href = "OrderHistory";
+        }
+    </script>
+</body>
+</html>

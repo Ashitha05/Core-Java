@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Shopping Cart</h1>
+    <!-- Add your items to be purchased -->
+    <p>Item 1 <button onclick="addItem('Item 1')">Add</button></p>
+    <p>Item 2 <button onclick="addItem('Item 2')">Add</button></p>
+    
+    <button onclick="submitOrder()">Submit</button>
+    
+    <script>
+        var selectedItems = [];
+
+        function addItem(item) {
+            
+            selectedItems.push(item);
+        }
+
+        function submitOrder() {
+            var orders = selectedItems.join(", ");
+            var url = "PurchaseServlet?orders=" + encodeURIComponent(orders);
+            window.location.href = url;
+               }
+    </script>
+</body>
+</html>
