@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="id1" class="apex.spring.Student">
+<property name="name" value="Ashi"></property> 
+<property name="age" value="30"></property> 
+<property name="addr" ref="addr1"></property> 
+
+</bean>
+
+<bean id="addr1" class="apex.spring.Address">
+<property name="state" value="Texas"></property> 
+<property name="city" value="Austin"></property> 
+
+</bean>
+
+</beans>
