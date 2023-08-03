@@ -24,10 +24,10 @@ public class Balancedbrackets {
 		}
 		if(st.isEmpty())
 		{
-			System.out.println("Balanced");
+			System.out.println("Balanced brackets");
 		}
 		else
-			System.out.println("Not Balanced");
+			System.out.println("Not Balanced brackets");
 
 	}
 
